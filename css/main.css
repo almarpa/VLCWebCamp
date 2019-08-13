@@ -97,6 +97,103 @@ textarea {
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
+.clearfix::after {          /* limpiar floats */
+  content:'';
+  clear: both;
+  display: block;
+}
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+body {
+  background-color: #f2f2f2;
+  font-family: 'Open-Sans', sans-serif;
+}
+h2 {
+  font-family: 'Oswald', sans-serif;
+}
+
+/** Header **/
+.hero {
+  background-image: url(../img/valencia.jpg);
+  height: 100vh;
+  background-position: center;
+  background-size: cover;
+}
+.contenido-header {
+  padding-top: 40px;
+}
+@media (min-width: 768px) {
+  .contenido-header {
+    padding-top: 10px;
+  }
+}
+.redes-sociales {
+  text-align: center;
+}
+.redes-sociales a {
+  color: white;
+  font-size: 2em;
+  margin-right: 20px;
+}
+.redes-sociales a:last-child {
+  margin-right: 0;
+}
+div.informacion-evento {
+  text-align: center;
+  color: #ffffff;
+  font-size: 2em;
+}
+@media (min-width: 768px) {
+  .informacion-evento {
+    width: 70%;
+    margin: 0 auto;
+    margin-top: 50px;
+  }
+}
+.informacion-evento p {
+  margin: 0;
+  display: inline;
+  font-size: 20px;
+  text-transform: uppercase;
+}
+.informacion-evento p i {
+  color: #fe4918;
+  font-size: 2.4rem;
+  margin-right: 5px;
+}
+p.fecha {
+  float: left;
+}
+p.ciudad {
+  float: right;
+  text-align: right;
+}
+p.slogan {
+  text-transform: none;
+}
+p.slogan span{
+  font-weight: bold;
+}
+h1.nombre-sitio {
+  font-size: 5.9vw;
+  text-transform: uppercase;
+  font-family: 'PT Sans', sans-serif;
+}
+@media (min-width: 768px) {
+  h1.nombre-sitio {
+    font-size: 9vw;
+    margin: 0;
+    line-height: 1;
+  }
+}
+
+/** Navegacion **/
+
+
 
 /* ==========================================================================
    Helper classes
