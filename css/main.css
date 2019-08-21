@@ -169,6 +169,11 @@ h3 {
   display: inline-block;
   transition: all .3s ease;
 }
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
 .button:hover {
   background-color: #e3300e;
 }
@@ -404,7 +409,52 @@ h1.nombre-sitio {
 }
 
 /** Invitados **/
-
+.lista-invitados li {
+  padding: 10px;
+  float: left;
+}
+@media (min-width: 480px) {
+  .lista-invitados li {
+    width: 50%;
+  }
+}
+@media (min-width: 768px) {
+  .lista-invitados li {
+    width: 33.3%;
+  }
+}
+.invitado {
+  position: relative;
+  overflow: hidden;
+}
+.invitado img {
+  max-width: 100%;
+  filter: gray;
+  -webkit-filter: grayscale(1);
+  -webkit-transition: all .5s ease-in-out;
+}
+.invitado:hover img {
+  -webkit-filter: grayscale(0);
+  -webkit-transform: scale(1.1);
+}
+.invitado p {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  padding: 15px 10px;
+  margin: 0;
+  background-color: rgba(0, 0, 0, .55);
+  width: 100%;
+  text-align: left;
+  font-family: 'Oswald', sans-serif;
+  color: #fe4918;
+  text-transform: uppercase;
+  -webkit-transition: all .5s ease-in-out;
+}
+.invitado:hover p {
+  bottom: -80px;
+  opacity: 0;
+}
 
 /* ==========================================================================
    Helper classes
