@@ -150,6 +150,31 @@ h2::after {
   width: 100px;
   display: block;
 }
+h3 {
+  font-size: 1.8rem;
+  color: #fe4918;
+  font-family: 'PT Sans', sans-serif;
+  margin: 0;
+}
+.button {
+  background-color: #fe4918;
+  padding: 10px 40px;
+  color: white;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-family: 'Oswald', sans-serif;
+  font-size: 1.4em;
+  text-decoration: none;
+  margin-top: 20px;
+  display: inline-block;
+  transition: all .3s ease;
+}
+.button:hover {
+  background-color: #e3300e;
+}
+.float-right {
+  float: right;
+}
 
 /** Header **/
 .hero {
@@ -363,6 +388,23 @@ h1.nombre-sitio {
   font-size: 1.4em;
   margin-right: 10px;
 }
+
+/** Detalle-Evento **/
+.detalle-evento {
+  margin-top: 20px;
+  border-bottom: 1px solid black;
+  padding: 0 20px;
+}
+.detalle-evento:last-of-type {
+  border: none;
+}
+.detalle-evento p {
+  margin-bottom: 20px;
+  font-size: 20px;
+}
+
+/** Invitados **/
+
 
 /* ==========================================================================
    Helper classes
