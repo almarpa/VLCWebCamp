@@ -566,6 +566,69 @@ h1.nombre-sitio {
   background-color: green;
 }
 
+/** Opiniones **/
+.opiniones {
+  padding-bottom: 20px;
+}
+.opinion {
+  padding: 5px;
+}
+@media (min-width: 768px) {
+  .opinion {
+    float: left;
+    width: 33.3%;
+  }
+}
+blockquote {
+  background-color: #ffffff;
+  border: 1px solid #e1e1e1;
+  position: relative;
+  margin: 0 0 10px 0;
+  padding-bottom: 20px;
+}
+blockquote p {
+  text-align: left!important;
+  font-size: 1em!important;
+  font-family: 'PT Sans', sans-serif;
+  padding: 0 20px 0 65px;
+}
+
+blockquote p::before {
+  content: '\201c';
+  position: absolute;
+  left: 13px;
+  top: 8px;
+  font-size: 7rem;
+  margin: 0;
+  line-height: 1;
+  color: #fe4918;
+}
+.info-opinion {
+  padding: 0;
+}
+.info-opinion img {
+  float: left;
+  width: 20%;
+  border-radius: 50%;
+  margin: 10px 0 10px 24px;
+}
+.info-opinion cite {
+  text-align: left;
+  color: #fe4918;
+  text-transform: uppercase;
+  font-size: 12px;
+  padding-top: 20px;
+  width: 66.6%;
+  float: right;
+  font-weight: bold;
+  font-style: normal;
+}
+.info-opinion cite span {
+  color: #000000;
+  display: block;
+  text-transform: none;
+}
+
 /* ==========================================================================
    Helper classes
    ========================================================================== */
