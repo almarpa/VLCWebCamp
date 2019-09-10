@@ -612,6 +612,7 @@ blockquote p::before {
 }
 .info-opinion {
   padding: 0;
+  background-color: transparent;
 }
 .info-opinion img {
   float: left;
