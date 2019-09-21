@@ -275,6 +275,13 @@ h1.nombre-sitio {
   background-color: #353535;
   padding: 20px 0;
 }
+.fixed {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 2;
+}
 .logo {
   width: 80%;
   float: left;
@@ -289,6 +296,10 @@ h1.nombre-sitio {
 }
 
 /** Navegacion Principal **/
+.navegacion-principal {
+  display: none;
+  width: 100%;
+}
 .navegacion-principal a {
   font-family: 'Oswald', sans-serif;
   color: white;
@@ -735,6 +746,15 @@ footer nav.redes-sociales {
 }
 
 /**  INTERNAS  **/
+/* Conferencias */
+.conferencia .navegacion-principal .activo {
+  border-bottom: 2px solid #fe4918;
+}
+.galeria a{
+  display: inline-block;
+  margin-bottom: 5px;
+}
+
 /* Registro */
 .registro h3 {
   text-align: center;
