@@ -1,3 +1,11 @@
+// JQUERY
+(function() {
+    // Menu responsive (menu desplegable)
+    $('.menu-movil').on('click', function() {
+        $('.navegacion-principal').slideToggle();
+    });
+})();
+
 (function() {
     "use strict";
 
