@@ -1,71 +1,4 @@
-<!doctype html>
-<html class="no-js" lang="">
-
-<head>
-  <meta charset="utf-8">
-  <title></title>
-  <meta name="description" content="">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-
-  <link rel="manifest" href="site.webmanifest">
-  <link rel="apple-touch-icon" href="icon.png">
-
-  <link rel="stylesheet" href="css/normalize.css">
-  <link rel="stylesheet" href="css/all.min.css">
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans|Oswald|PT+Sans:700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="css/main.css">
-
-  <meta name="theme-color" content="#fafafa">
-</head>
-
-<body>
-
-  <header class="site-header">
-    <div class="hero">
-      <div class="contenido-header">
-        <nav class="redes-sociales">
-          <a href="#"><i class="fab fa-facebook-f" aria-hidden="true"></i></i></a>
-          <a href="#"><i class="fab fa-twitter" aria-hidden="true"></i></a>
-          <a href="#"><i class="fab fa-pinterest-p" aria-hidden="true"></i></a>
-          <a href="#"><i class="fab fa-youtube" aria-hidden="true"></i></a>
-          <a href="#"><i class="fab fa-instagram" aria-hidden="true"></i></a>
-        </nav>
-        <div class="informacion-evento">
-          <p class="fecha"><i class="fas fa-calendar-alt"></i>10-12 DIC</p>
-          <p class="ciudad"><i class="fas fa-map-marker-alt"></i>València, ESP</p>
-          <h1 class="nombre-sitio">VLCWebCamp</h1>
-          <p class="slogan">La mejor conferencia de <span>diseño web</span></p>
-        </div>
-        <!--informacion-evento-->
-      </div>
-    </div>
-    <!--hero-->
-  </header>
-
-  <div class="barra">
-    <div class="contenedor clearfix">
-      <div class="logo">
-          <a href="index.html">
-            <img src="img/vlcwebcamp.png" alt="logo">
-          </a>  
-      </div>
-
-      <div class="menu-movil">
-        <span></span>
-        <span></span>
-        <span></span>
-      </div>
-
-      <nav class="navegacion-principal clearfix">
-        <a href="conferencia.html">Conferencia</a>
-        <a href="calendario.html">Calendario</a>
-        <a href="invitados.html">Invitados</a>
-        <a href="registro.html">Reservas</a>
-      </nav>
-    </div>
-    <!--contenedor-->
-  </div>
-  <!--barra-->
+<?php include_once 'includes/templates/header.php'; ?>
 
   <section class="seccion contenedor">
     <h2>Registro de usuarios</h2>
@@ -76,7 +9,7 @@
           <input type="text" name="nombre" id="nombre" placeholder="Tu nombre">
         </div>
         <div class="campo">
-          <label for="apellido">Apellido:</label>
+          <label for="apellido">Apellidos:</label>
           <input type="text" name="apellido" id="apellido" placeholder="Tu apellido">
         </div>
         <div class="campo">
@@ -291,64 +224,4 @@
     </form>
   </section>
 
-  <footer class="site-footer">
-    <div class="contenedor clearfix">
-      <div class="footer-informacion">
-        <h3>Sobre <span>VLCWebCamp</span></h3>
-        <p>Sed mollis velit sit amet felis condimentum ultrices. Fusce vehicula ut sem vitae semper. Nullam
-          blandit
-          neque eu semper ullamcorper. Duis comodo quam in orci condimentum ultricies.</p>
-      </div>
-      <div class="ultimos-tweets">
-        <h3>Últimos <span>tweets</span></h3>
-        <ul>
-          <li>Nullam blandit neque eu semper ullamcorper.</li>
-          <li>Fusce vehicula ut sem vitae semper. Nullam blandit neque eu semper ullamcorper.</li>
-          <li>Sed mollis velit sit amet felis condimentum ultrices. Fusce vehicula ut sem vitae semper.</li>
-        </ul>
-      </div>
-      <div class="menu">
-        <h3>Redes <span>sociales</span></h3>
-        <nav class="redes-sociales">
-          <a href="#"><i class="fab fa-facebook-f" aria-hidden="true"></i></i></a>
-          <a href="#"><i class="fab fa-twitter" aria-hidden="true"></i></a>
-          <a href="#"><i class="fab fa-pinterest-p" aria-hidden="true"></i></a>
-          <a href="#"><i class="fab fa-youtube" aria-hidden="true"></i></a>
-          <a href="#"><i class="fab fa-instagram" aria-hidden="true"></i></a>
-        </nav>
-      </div>
-    </div>
-
-    <p class="copyright">
-      Todos los derechos reservados VLCWebCamp 2019 <span class="copy-left">©</span>
-    </p>
-  </footer>
-
-  <!-- Add your site or application content here -->
-  <script src="js/vendor/modernizr-3.7.1.min.js"></script>
-  <script src="https://code.jquery.com/jquery-3.4.1.min.js"
-    integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
-  <script>
-    window.jQuery || document.write('<script src="js/vendor/jquery-3.4.1.min.js"><\/script>')
-
-  </script>
-  <script src="js/plugins.js"></script>
-  <script src="js/registro.js"></script>
-
-  <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
-  <script>
-    window.ga = function () {
-      ga.q.push(arguments)
-    };
-    ga.q = [];
-    ga.l = +new Date;
-    ga('create', 'UA-XXXXX-Y', 'auto');
-    ga('set', 'transport', 'beacon');
-    ga('send', 'pageview')
-
-  </script>
-  <script src="https://www.google-analytics.com/analytics.js" async></script>
-
-</body>
-
-</html>
+  <?php include_once 'includes/templates/footer.php'; ?>
