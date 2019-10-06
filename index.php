@@ -218,7 +218,7 @@
     <div class="contenido contenedor">
       <p>Registrate al newsletter</p>
       <h3>VLCWebCamp</h3>
-      <a href="registro.html" class="button transparente">Registro</a>
+      <a href="registro.php" class="button transparente">Registro</a>
     </div>
   </div>
 
