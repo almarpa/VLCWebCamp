@@ -6,7 +6,7 @@
     <?php
     try {
         require_once('includes/funciones/bd_conexion.php');
-        $sql = "SELECT id_evento, nombre_evento, fecha_evento, hora_evento, cat_evento, nombre_invitado, apellido_invitado ";
+        $sql = "SELECT id_evento, nombre_evento, fecha_evento, hora_evento, cat_evento, icono, nombre_invitado, apellido_invitado ";
         $sql .= "FROM evento ";
         $sql .= "INNER JOIN categoria_evento ";
         $sql .= "ON evento.id_cat_evento = categoria_evento.id_categoria ";
@@ -34,6 +34,7 @@
                 'fecha' => $eventos['fecha_evento'],
                 'hora' => $eventos['hora_evento'],
                 'categoria' => $eventos['cat_evento'],
+                'icono' => 'fa' . " " . $eventos['icono'],
                 'invitado' => $eventos['nombre_invitado'] . " " . $eventos['apellido_invitado']
             );
             
@@ -55,9 +56,11 @@
             </h3>
             <?php foreach($lista_eventos as $evento) { ?>
                 <div class="dia">
-                    <p class="titulo"><?php echo $evento['titulo']; ?></p>
+                    <p class="titulo">
+                        <?php echo $evento['titulo']; ?>
+                    </p>
                     <p class="hora">
-                        <i class="fa fa-clock-o" aria-hidden="true"></i>
+                        <i class="fa fa-clock" aria-hidden="true"></i>
                         <?php echo $evento['fecha'] . " " . $evento['hora']; ?>
                     </p>
                     <p>
@@ -69,14 +72,8 @@
                         <?php echo $evento['invitado']; ?></p>
                     </p>
                 </div>
-            <?php } ?>
-
-        <?php } ?>
-
-    <pre>
-        <?php var_dump($calendario); ?>
-    </pre>
-
+            <?php } //Fin foreach eventos ?> 
+        <?php } //Fin foreach dias?>
 </div>
 
 <?php
