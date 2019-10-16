@@ -868,7 +868,13 @@ input[disabled].button {
 }
 
 /** Calendario **/
-
+.calendario h3 {
+  background-color: #fe4918;
+  clear: both;
+  color: white;
+  text-align: center;
+  padding: 10px 0;
+}
 .calendario::after {
   clear: both;
   display: block;

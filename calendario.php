@@ -42,15 +42,14 @@
                 ?>
             <?php } // while de fetch_assoc?>
 
-
         <?php
             foreach($calendario as $dia => $lista_eventos) { ?>
                 <h3>
                     <i class="fa fa-calendar" aria-hidden="true"></i>
                     <?php 
-                        setLocale(LC_TIME,'spanish');
-                    
-                        echo strftime( "%A, %d de %B del %Y", strtotime($dia) ); 
+                        setLocale(LC_TIME,'spanish.UTF-8');
+                        //Imprime cada día para el que existen cursos
+                        echo strftime( "%A,  %d-%B-%Y", strtotime($dia) ); 
                     ?>
                     
                 </h3>
