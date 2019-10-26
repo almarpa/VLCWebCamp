@@ -40,7 +40,7 @@
               <p><i class="fas fa-calendar"></i>16 de Dic</p>
               <p><i class="fas fa-user"></i>Shari Herrera</p>
             </div>
-            <a href="#" class="button float-right">Ver todos</a>
+            <a href="calendario.php" class="button float-right">Ver todos</a>
           </div><!--talleres-->
           <div id="conferencias" class="info-curso ocultar clearfix">
             <div class="detalle-evento">
@@ -55,7 +55,7 @@
               <p><i class="fas fa-calendar"></i>10 de Dic</p>
               <p><i class="fas fa-user"></i>Susan Sánchez</p>
             </div>
-            <a href="#" class="button float-right">Ver todos</a>
+            <a href="calendario.php" class="button float-right">Ver todos</a>
           </div><!--conferencias-->
           <div id="seminarios" class="info-curso ocultar clearfix">
             <div class="detalle-evento">
@@ -70,7 +70,7 @@
               <p><i class="fas fa-calendar"></i>16 de Dic</p>
               <p><i class="fas fa-user"></i>Susana Rivera</p>
             </div>
-            <a href="#" class="button float-right">Ver todos</a>
+            <a href="calendario.php" class="button float-right">Ver todos</a>
           </div><!--seminarios-->
         </div><!--programa-evento-->
       </div><!--contenedor-->
@@ -144,7 +144,7 @@
               <li><i class="fas fa-check"></i>Todas las conferencias</li>
               <li><i class="fas fa-check"></i>Todos los talleres</li>
             </ul>
-            <a href="#" class="button hollow">Comprar</a>
+            <a href="registro.php" class="button hollow">Comprar</a>
           </div>
         </li>
 
@@ -157,7 +157,7 @@
               <li><i class="fas fa-check"></i>Todas las conferencias</li>
               <li><i class="fas fa-check"></i>Todos los talleres</li>
             </ul>
-            <a href="#" class="button">Comprar</a>
+            <a href="registro.php" class="button">Comprar</a>
           </div>
         </li>
 
@@ -170,7 +170,7 @@
               <li><i class="fas fa-check"></i>Todas las conferencias</li>
               <li><i class="fas fa-check"></i>Todos los talleres</li>
             </ul>
-            <a href="#" class="button hollow">Comprar</a>
+            <a href="registro.php" class="button hollow">Comprar</a>
           </div>
         </li>
       </ul>
