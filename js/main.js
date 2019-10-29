@@ -22,6 +22,11 @@
 // JQUERY
 $(function() {
 
+    //Agregar clase al menú
+    $('body.conferencia .navegacion-principal a:contains("Conferencia")').addClass('activo');
+    $('body.calendario .navegacion-principal a:contains("Calendario")').addClass('activo');
+    $('body.invitados .navegacion-principal a:contains("Invitados")').addClass('activo');
+
     // Menu fijo durante el scroll 
     var windowHeight = $(window).height();
     var barraAltura = $('.barra').innerHeight();
@@ -39,7 +44,7 @@ $(function() {
 
     // Menu responsive (menu desplegable)
     $('.menu-movil').on('click', function() {
-        $('.navegacion-principal').slideToggle();
+        //$('.navegacion-principal').slideToggle();
     });
 
     // Programa de conferencias
