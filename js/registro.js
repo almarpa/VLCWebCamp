@@ -33,6 +33,8 @@
         var camisas = document.getElementById('camisa_evento');
         var etiquetas = document.getElementById('etiquetas');
 
+        botonRegistro.disabled = true;
+
         // EventListeners
         calcular.addEventListener('click', calcularPrecio);
 
@@ -108,7 +110,11 @@
                 for (var i = 0; i< listadoProductos.length; i++) {
                     lista_productos.innerHTML += listadoProductos[i] + '<br/>';
                 }
-                suma.innerHTML = "$ " + totalAPagar.toFixed(2);
+                suma.innerHTML = totalAPagar.toFixed(2) + " €";
+
+                botonRegistro.disabled = false;
+                //campo hidden para el precio total
+                document.getElementById('total_pedido').value = totalAPagar;
             }
         }
 
