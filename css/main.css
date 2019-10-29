@@ -908,6 +908,13 @@ input[disabled].button {
 .dia i {
   color: #fe4918;
 }
+
+/** Colorbox **/
+div.cboxElement {
+  padding: 30px!important;
+  text-align: center;
+}
+
 /* ==========================================================================
    Helper classes
    ========================================================================== */
